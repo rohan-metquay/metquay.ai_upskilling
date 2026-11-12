@@ -39,12 +39,12 @@ const udefs: readonly number[] = [7,5,2,7,90,18];
 let tup: [string, number] = ["Gems", 60];
 const instrument: [make: string, model: string] = ["make", "model"];
 
-const e: Employee = {name: "Sam", "age": 24, employee_id: "EMP001", date: new Date(), greet(){return "Hello"}};
+const e: employee = {name: "Sam", "age": 24, employee_id: "EMP001", date: new Date(), greet(){return "Hello"}};
 console.log(e);
 
 type rid = number | string;
 type instrument = [make: string, model: number];
-type emp_instrument = Employee | instrument;
+type emp_instrument = employee | instrument;
 const emp_instr: emp_instrument = {name: "Rohu", age: 39, employee_id: "EMP002", date: new Date(), greet(){return "Hello"}};
 const emp_instr2: emp_instrument = ["Mityuto", 101];
 console.log(emp_instr, emp_instr2);

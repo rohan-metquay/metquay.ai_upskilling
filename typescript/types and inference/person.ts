@@ -1,4 +1,4 @@
-interface Person{
+interface person{
     name: string,
     age: number,
     date: Date,
